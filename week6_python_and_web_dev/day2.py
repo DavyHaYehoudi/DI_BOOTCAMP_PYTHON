@@ -63,7 +63,7 @@ elif nbr_char < 10:
 
     # Then, print the first and last characters of the given text.
 first_char = word[0]
-last_char = word[9]
+last_char = word[-1]
 print(
     f"The first character of the string is the letter {first_char} and the last character is the letter {last_char} ")
 
