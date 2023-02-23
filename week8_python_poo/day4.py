@@ -63,7 +63,7 @@ class Dog():
         other_power = other_dog.run_speed() * other_dog.weight
         if my_power > other_power:
             return f"{self.name} won the fight"
-        else:
+        else: # this else it's redundant bucause you do return at the if statment
             return f"{other_dog.name} won the fight"
 
 
@@ -106,9 +106,9 @@ class Family:
             if member["name"] == name:
                 if member["age"] >= 18:
                     return True
-                else:
+                else: # this else it's redundant bucause you do return at the if statment
                     return False
-        return None
+        return None # Why to return None? and not default value which is False
     
     def family_presentation(self):
         print(f"Meet the {self.last_name} family:")
