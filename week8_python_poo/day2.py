@@ -89,7 +89,7 @@ class Farm:
         self.name = name
         self.animals = {}
 
-    def add_animal(self, animal_type, count=1):
+    def add_animal(self, animal_type, count=1): # you can make this function in just a single line: self.animals[animal_type] = self.animals.get(animal_type, 0) + count
         if animal_type in self.animals:
             self.animals[animal_type] += count
         else:
