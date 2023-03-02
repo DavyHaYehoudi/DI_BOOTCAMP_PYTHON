@@ -19,7 +19,7 @@ import math
 
 class Circle():
     def __init__(self, radius=None, diameter=None):
-        if radius:
+        if radius: # think how you can use classmwthod to implemnt it
             self.radius = radius
             self.diameter = radius * 2
         elif diameter:
