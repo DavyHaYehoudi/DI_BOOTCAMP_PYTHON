@@ -7,12 +7,12 @@ app = Flask(__name__)
 def exercices():
     with open('templates/exercices.md', 'r') as f:
         markdown_text = f.read()
-    html = markdown.markdown(markdown_text)
+    html = markdown.markdown(markdown_text) # there is no need for a new variable you can just do return markdown.markdown(md)
     return html
 
 @app.route("/lesson")
 def lesson():
-    with open('templates/in-this-chapter.md', 'r') as f:
+    with open('templates/in-this-chapter.md', 'r') as f: 
         markdown_text = f.read()
     html = markdown.markdown(markdown_text)
     return html
